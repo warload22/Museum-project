@@ -1,0 +1,223 @@
+body {
+    background: url("../vendor/img/wallpaper.jpg") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* на весь фон, сохраняя пропорции и обрезая лишние */
+    background-size: cover; 
+    /* предотвращает повторение изображения */
+    background-repeat: no-repeat;
+    /* зафиксирует изображение на месте при прокрутке страницы */
+    background-attachment: fixed;
+
+    
+}
+
+body {
+    position: relative;
+    background: #000;
+}
+
+/* body:hover {
+    opacity: 0.6;} */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../vendor/img/wallpaper.jpg") no-repeat center top / cover;
+    filter: blur(4px);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#start-purchase-btn {
+    /* background: linear-gradient(rgba(132, 136, 145, 0.459), rgba(103, 164, 192, 0.54));
+    background-color: #a2aab4;
+    border-color: #c9cdd3;
+    color: white; */
+
+    /* Устанавливает радиус скругления */
+    position: fixed;
+    bottom: auto;
+    top: auto; /* Adjust as needed */
+    right: auto;
+    border-radius: 20px;
+    background-color: #2b343ba6;
+    box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+    transition: 0.5s;
+} 
+
+#start-purchase-btn:hover { 
+    transform: translate(0,-3px);
+    box-shadow: 0 8px 40px 0 rgba(11, 99, 246, 1);
+}
+
+#start-purchase-link {
+    text-decoration: none;
+    color: white;
+}
+
+.botton {
+    padding-left: 73%;
+    padding-top: 75%;
+}
+
+.custom-nb {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+}
+
+.custom-nb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 162, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.custom-nb:hover {
+    border-color: rgba(30, 79, 185, 0.7);
+}
+
+.custom-nb:hover::before {
+    opacity: 1;
+}
+
+/* .left-align {
+    text-align: left;
+} */
+
+/* .ecsponate {
+    text-decoration: underline;
+    color: white;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+} */
+.img {
+    
+    filter: blur(5px);
+}
+
+.ecspa {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+.vhod {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+.image {    
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.card-menu{ 
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -700px;
+    margin-left: 120px;
+    width: 1700px; /* Ширина формы */
+    height: 610px;
+    padding: 20px;
+    border: 1px solid #494949;
+    border-radius: 5px;
+    
+    position: fixed;
+    bottom: auto;
+    top: auto; /* Adjust as needed */
+    right: auto;
+    border-radius: 20px;
+    background-color: #272727;
+    box-shadow: 0 5px 15px 0 rgb(162, 196, 255);
+    transition: 0.5s;
+}
+
+.img-1 {    
+    /* background: url("../vendor/img/1.jpg") no-repeat center top / cover; */
+    text-align: bottom;
+    -webkit-text-fill-color:white;
+    padding: 0px 0px;
+    position: relative;
+    margin-top: 43px;
+    
+}
+
+.text-editor {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-decoration: none; 
+    -webkit-text-fill-color:white;
+    text-align: justify;
+    padding: 0px 0px;
+}
+
+.card-small-text{
+    font-family: 'Raleway', sans-serif;    
+    font-size: 17.5px;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 16px;    
+    text-decoration: none; 
+    text-transform: uppercase;
+    -webkit-text-fill-color:#fff563;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.post-card {
+    font-family: 'Raleway', sans-serif;    
+    font-weight: normal;
+    font-size: 1.3em;
+    position: absolute;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.card-title {
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fff;
+}

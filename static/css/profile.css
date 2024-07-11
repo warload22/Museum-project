@@ -1,0 +1,14 @@
+body {
+    padding-top: 56px;
+    background: url("../vendor/img/wallpaper5.png") no-repeat center top fixed;
+    /* на весь фон, сохраняя пропорции и обрезая лишние */
+    background-size: cover; 
+    /* предотвращает повторение изображения */
+    background-repeat: no-repeat;
+    /* зафиксирует изображение на месте при прокрутке страницы */
+    background-attachment: fixed;
+}
+
+.myBig2 {
+    color: white;
+}

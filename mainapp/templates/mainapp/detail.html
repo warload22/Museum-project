@@ -1,0 +1,41 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link href="{% static 'css/products.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+            <h1 class="my-4 my-big">Каталог</h1>
+                <div class="list-group">
+                    <a href="{% url 'mainapp:products' %}" class="navMenu">В меню</a>
+                </div>
+            </div>
+
+            <div class="col-lg-9 lg-9-custom">
+                <div class="row my-5 my-5-custom my-5-custom-1">
+                    <div class="card blackMamba" style="width: 20rem;">
+                        <img src="/media/{{ exhibits.image }}" class="card-img-top PhotoMamba" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ exhibits.name }}</h5>
+                            <p class="card-text">{{ exhibits.descriptions }}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Данила и Артём 2022</p>
+        </div>
+    </footer>
+{% endblock %}

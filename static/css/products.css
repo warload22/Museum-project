@@ -1,0 +1,185 @@
+body {
+    padding-top: 56px;
+    background: url("../vendor/img/wallpaper5.png") no-repeat center top fixed;
+    /* на весь фон, сохраняя пропорции и обрезая лишние */
+    background-size: cover; 
+    /* предотвращает повторение изображения */
+    background-repeat: no-repeat;
+    /* зафиксирует изображение на месте при прокрутке страницы */
+    background-attachment: fixed;
+}
+
+.underline-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+
+    /* position: fixed;
+    bottom: auto;
+    top: auto; Adjust as needed */
+    right: auto;
+    border-radius: 20px;
+    background-color: #2b343ba6;
+    box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+    transition: 0.5s;
+}
+
+.custom-nb-1 {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+}
+
+.custom-nb-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 162, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.custom-nb-1:hover {
+    border-color: rgba(30, 79, 185, 0.7);
+}
+
+.custom-nb-1:hover::before {
+    opacity: 1;
+}
+
+.ecspa {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+.vhod {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+.card-option{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    padding: 0.15rem;
+    border-radius: 20px;
+}
+a.aText {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    /* overflow-wrap: break-word; */
+    word-break: break-all;
+    color: black;
+    text-decoration: none;
+
+    
+}
+
+a.aText:hover {
+    color: black;
+}
+
+.b {
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.opt-tetx{  
+    position: fixed;
+    bottom: auto;
+    top: auto; /* Adjust as needed */
+    right: auto;
+    border-radius: 20px;
+    background-color: #adb4b9b9;
+    box-shadow: 0 5px 15px 0 rgba(182, 209, 255, 0.555);
+    transition: 0.5s;
+}
+
+.photo {
+    position: center;
+    width: 220px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: Snow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 10px;
+}
+
+.mb-card {    
+    border-radius: 20px;
+    background-color: #d3d3d377;
+    box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+    transition: 0.5s;
+}
+
+a.navMenu:hover{
+    color: #ffb833;
+}
+
+a.navMenu {
+    width: 100%;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-align: inherit;
+    transition: 0.5s;
+    margin-top: 15px;
+}
+
+.lg-9-custom {
+    margin-bottom: 94px;
+    margin-right: 80px;
+}
+.my-5-custom {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    padding: 0.15rem;
+    
+    border-radius: 20px;
+    background-color: #d3d3d377;
+    box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+    transition: 0.5s;
+    margin-left: 520px;
+}
+
+.my-big{
+    color:white;
+}
+
+.blackMamba {
+    border-radius: 20px;
+
+}
+
+.PhotoMamba {
+    border-radius: 20px;
+}
